@@ -32,14 +32,6 @@
       // console.log(arr[5].innerText);
 
       const flexBox = arr.filter((i) => {
-        // if (i.innerText.includes("Flexbox")) {
-        //   const arr2 = i.dataset["time"].split(":").map(Number);
-        //   console.log(arr2);
-        //   const sum = arr2.reduce((acc, curr) => {
-        //     return acc * 60 + curr;
-        //   });
-        //   console.log(`Total ${sum} seconds`);
-        // }
         return i.innerText.includes("Flexbox");
       }).map((i)=>{
          return i.dataset["time"].split(":").map(Number);
